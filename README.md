@@ -69,4 +69,4 @@ Se utiliza el siguiente algoritmo para calculo de error relativo, donde el resul
 
 Referidos a perdida de significancia: (https://en.wikiversity.org/wiki/Numerical_Analysis/Loss_of_Significance).
 
-Referido a nimpy.std: (https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.std.html).
+Referido a numpy.std: (https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.std.html).
