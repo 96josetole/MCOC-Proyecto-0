@@ -1,5 +1,7 @@
-# MCOC-Proyecto-0
+# MCOC-Proyecto-0 Perdida de significancia
 MCOC-Proyecto-0
+
+Universidad de Los Andes 2018-20
 # Introducción
 La perdida de significancia ocurre en calculos numéricos realizados en computador debido a que se considera una menor cantidad de cifras significativas. Dicho fenómeno se ve reflejado en el siguiente ejemplo.
 # Perdida de significancia en calculo de desviación estándar 
