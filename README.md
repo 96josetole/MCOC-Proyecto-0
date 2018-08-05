@@ -11,7 +11,7 @@ Se comparan los siguientes procesos de calculo de desviacion estandar:
  2. Definir el arreglo `a` con tipo de datos `dtype=sp.float32` y usar `np.std` con un acumulador interno de tipo `np.float64`. 
  3. Definir el arreglo `a` con tipo de datos `dtype=sp.float32` y usar `np.std` con un acumulador interno de tipo `np.float16`.
  4. Definir el arreglo `a` con tipo de datos `dtype=sp.float32` y usar una función de desviacion estandar `stdev64`, donde en su definicion se utilizo el calculo de promedio `np.mean` con un acumulador interno de tipo `np.float64`. 
- 5. Definir el arreglo `a` con tipo de datos `dtype=sp.float32` y usar una función de desviacion estandar `stdev64`, donde en su definicion se utilizo el calculo de promedio `np.mean` con un acumulador interno de tipo `np.float32`.
+ 5. Definir el arreglo `a` con tipo de datos `dtype=sp.float32` y usar una función de desviacion estandar `stdev32`, donde en su definicion se utilizo el calculo de promedio `np.mean` con un acumulador interno de tipo `np.float32`.
 
 # Output
 
@@ -19,9 +19,13 @@ Se utiliza el siguiente algoritmo para calculo de error relativo, donde el resul
 
 	ERROR = (Promedio_Calculado - Resultado_Exacto) / Resultado_Exacto
  
- Luego, se muestra en la siguiente figura como se produce la perdida de significancia, esto ocurre debido al proceso de suma interno que tiene la libreria `scipy`.
+ Luego, se muestra en la siguiente figura como se produce la perdida de significancia sin tomar en consideracion el caso numero 3, esto ocurre debido al proceso de suma interno que tiene la libreria `scipy`.
  
  ![Results](loss-of-significance-plot.png)
+ 
+ En la figura siguiente se aprecia cuan mayor es la perdida de significancia del caso 3 donde se usa un acumulador interno de tipo `np.float16`.
+ 
+ ![Results](loss-of-significance-plot2.png) 
  
  Output de la consola:
  
