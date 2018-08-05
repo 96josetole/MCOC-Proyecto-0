@@ -64,4 +64,9 @@ Se utiliza el siguiente algoritmo para calculo de error relativo, donde el resul
        Standard_deviation_2 = 0.450006776749 ERROR = 0.0 %
        Standard_deviation_3 = 0.44995        ERROR = 0.0123564525481 %
        Standard_deviation_4 = 0.450006776749 ERROR = 5.32899026658e-12 %
-       Standard_deviation_5 = 0.450006780474 ERROR = 8.27717308651e-07 % 
+       Standard_deviation_5 = 0.450006780474 ERROR = 8.27717308651e-07 %
+# Anexos
+
+Referidos a perdida de significancia: (https://en.wikiversity.org/wiki/Numerical_Analysis/Loss_of_Significance).
+
+Referido a nimpy.std: (https://docs.scipy.org/doc/numpy-1.13.0/reference/generated/numpy.std.html).
