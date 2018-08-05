@@ -5,7 +5,7 @@ Universidad de Los Andes 2018-20
 # Introducción
 La perdida de significancia ocurre en calculos numéricos realizados en computador debido a que se considera una menor cantidad de cifras significativas. Dicho fenómeno se ve reflejado en el siguiente ejemplo.
 # Perdida de significancia en calculo de desviación estándar 
-En este caso se aborda la operación de calculo de desviación estándar `np.std` de una muestra de datos, donde se percibe una perdida de significancia notable al hacer uso de datos `dtype=np.float16`. El ejemplo a plantear en este documento es una discusión mas elaborada de lo que se encuentra especificado en la [documentación de scipy] (https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.std.html).
+En este caso se aborda la operación de calculo de desviación estándar `np.std` de una muestra de datos, donde se percibe una perdida de significancia notable al hacer uso de datos `dtype=np.float16`, lo anterior es debido a que se utiliza la mitad de precisión de punto flotante en comparación a un `dtype=np.float32` y un cuarto de precisión de punto flotante en comparación a un `dtype=np.float64`. El ejemplo a plantear en este documento es una discusión mas elaborada de lo que se encuentra especificado en la [documentación de scipy] (https://docs.scipy.org/doc/numpy-1.14.0/reference/generated/numpy.std.html).
 
 Se comparan los siguientes procesos de calculo de desviación estándar:
 
@@ -21,7 +21,7 @@ Se utiliza el siguiente algoritmo para calculo de error relativo, donde el resul
 
 	ERROR = (Standard_deviation_Calculado - Resultado_Exacto) * 100 / Resultado_Exacto
  
- Luego, se muestra en la siguiente figura como se produce la perdida de significancia sin tomar en consideración el caso numero 3, esto ocurre debido al proceso de suma interno que tiene la librería `scipy`.
+ Luego, se muestra en la siguiente figura como se produce la perdida de significancia sin tomar en consideración el caso número 3, esto ocurre debido al proceso de suma interno que tiene la librería `scipy`.
  
  ![Results](loss-of-significance-plot.png)
  
