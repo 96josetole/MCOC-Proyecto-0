@@ -21,6 +21,8 @@ Se utiliza el siguiente algoritmo para calculo de error relativo, donde el resul
  
  Luego, se muestra en la siguiente figura como se produce la perdida de significancia, esto ocurre debido al proceso de suma interno que tiene la libreria `scipy`.
  
+ ![Results](loss-of-significance-plot.png)
+ 
  Output de la consola:
  
        N = 512
