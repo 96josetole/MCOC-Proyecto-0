@@ -19,7 +19,7 @@ Se comparan los siguientes procesos de calculo de desviación estándar:
 
 Se utiliza el siguiente algoritmo para calculo de error relativo, donde el resultado que se considera exacto es el del segundo caso:
 
-	ERROR = (Standard_deviation_Calculado - Resultado_Exacto) * 100 / Resultado_Exacto
+	ERROR = abs(Standard_deviation_Calculado - Resultado_Exacto) * 100 / Resultado_Exacto
  
  Luego, se muestra en la siguiente figura como se produce la perdida de significancia sin tomar en consideración el caso número 3, esto ocurre debido al proceso de suma interno que tiene la librería `scipy`.
  
